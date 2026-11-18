@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arkanthia | Inicio</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Nuestro CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACION -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+
+                <a class="navbar-brand" href="index.html">
+                    <img src="imagenes/logo.png" alt="Logo de Arkanthia" width="45" height="45">
+                    Arkanthia
+                </a>
+
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu"
+                    aria-controls="menu"
+                    aria-expanded="false"
+                    aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pociones.html">Pociones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="grimorios.html">Grimorios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="criaturas.html">Criaturas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reliquias.html">Reliquias</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- CARRUSEL PRINCIPAL -->
+        <section class="carrusel" aria-label="Novedades de Arkanthia">
+
+            <div class="carousel-container">
+
+                <!-- DIAPOSITIVA 1: INICIO -->
+                <div class="carousel-item active portada-inicio">
+                    <div class="contenido-carrusel container">
+
+                        <span class="estrellas">✦ ✧ ✦</span>
+
+                        <img src="imagenes/logo.png"
+                             class="logo-portada"
+                             alt="Emblema de Arkanthia">
+
+                        <h1>ARKANTHIA</h1>
+
+                        <p>Donde la magia se convierte en leyenda</p>
+
+                        <a href="#categorias" class="btn btn-dorado">
+                            Descubre nuestro mundo
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- DIAPOSITIVA 2: POCIONES -->
+                <div class="carousel-item portada-pociones">
+                    <div class="contenido-carrusel container">
+
+                        <span class="estrellas">✦ ✧ ✦</span>
+
+                        <h2>POCIONES MÁGICAS</h2>
+
+                        <p>Elixires que cambian el destino de cualquier aventura.</p>
+
+                        <a href="pociones.html" class="btn btn-dorado">
+                            Descubrir pociones
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- DIAPOSITIVA 3: GRIMORIOS -->
+                <div class="carousel-item portada-grimorios">
+                    <div class="contenido-carrusel container">
+
+                        <span class="estrellas">✦ ✧ ✦</span>
+
+                        <h2>GRIMORIOS ANCESTRALES</h2>
+
+                        <p>Hechizos y secretos guardados durante siglos.</p>
+
+                        <a href="grimorios.html" class="btn btn-dorado">
+                            Explorar grimorios
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- DIAPOSITIVA 4: CRIATURAS -->
+                <div class="carousel-item portada-criaturas">
+                    <div class="contenido-carrusel container">
+
+                        <span class="estrellas">✦ ✧ ✦</span>
+
+                        <h2>CRIATURAS Y RELIQUIAS</h2>
+
+                        <p>Huevos legendarios y tesoros de mundos desconocidos.</p>
+
+                        <a href="#categorias" class="btn btn-dorado">
+                            Ver las categorías
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- FLECHAS DEL CARRUSEL -->
+            <button class="prev" onclick="prevSlide()" aria-label="Anterior">
+                &#10094;
+            </button>
+
+            <button class="next" onclick="nextSlide()" aria-label="Siguiente">
+                &#10095;
+            </button>
+
+            <!-- INDICADORES INFERIORES -->
+            <div class="indicators"></div>
+
+        </section>
+
+        <!-- CATEGORIAS DE LA TIENDA -->
+        <section class="container py-5" id="categorias">
+
+            <h2 class="text-center mb-4">Nuestras categorías</h2>
+
+            <div class="row g-4">
+
+                <!-- POCIONES -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+
+                        <img src="imagenes/pociones.jpg"
+                             class="card-img-top"
+                             alt="Pociones mágicas">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Pociones</h5>
+
+                            <p class="card-text">
+                                Elixires de salud, magia y poderes especiales.
+                            </p>
+
+                            <a href="pociones.html" class="btn btn-magia">
+                                Ver pociones
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- GRIMORIOS -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+
+                        <img src="imagenes/grimorios.jpg"
+                             class="card-img-top"
+                             alt="Grimorios mágicos">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Grimorios</h5>
+
+                            <p class="card-text">
+                                Libros antiguos llenos de hechizos y secretos.
+                            </p>
+
+                            <a href="grimorios.html" class="btn btn-magia">
+                                Ver grimorios
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- CRIATURAS -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+
+                        <img src="imagenes/criaturas.jpg"
+                             class="card-img-top"
+                             alt="Huevos de criaturas">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Criaturas</h5>
+
+                            <p class="card-text">
+                                Huevos de dragón y otras criaturas misteriosas.
+                            </p>
+
+                            <a href="criaturas.html" class="btn btn-magia">
+                                Ver criaturas
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- RELIQUIAS -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+
+                        <img src="imagenes/reliquias.jpg"
+                             class="card-img-top"
+                             alt="Reliquias encantadas">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Reliquias</h5>
+
+                            <p class="card-text">
+                                Artefactos encantados de leyendas olvidadas.
+                            </p>
+
+                            <a href="reliquias.html" class="btn btn-magia">
+                                Ver reliquias
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- INFORMACION DE LA TIENDA -->
+        <section class="container text-center py-5">
+
+            <h2>Un mundo lleno de magia</h2>
+
+            <p>
+                En Arkanthia encontrarás objetos fantásticos
+                para aventureros, magos y coleccionistas.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- PIE DE PAGINA -->
+    <footer class="text-center py-4">
+
+        <p class="mb-2">
+            Arkanthia - Tienda de objetos mágicos
+        </p>
+
+        <a href="index.html">Volver al inicio</a>
+
+    </footer>
+
+    <!-- JAVASCRIPT DEL CARRUSEL -->
+    <script src="scripts.js"></script>
+
+    <!-- JAVASCRIPT DE BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

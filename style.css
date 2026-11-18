@@ -1,0 +1,267 @@
+
+/* FONDO GENERAL */
+body {
+    background-color: rgb(18, 16, 27);
+    color: rgb(241, 234, 249);
+}
+
+/* BARRA DE NAVEGACION */
+.navbar, footer {
+    background-color: rgb(28, 22, 41);
+}
+
+.navbar-brand, h1, h2, h5 {
+    color: rgb(213, 172, 96);
+}
+
+.navbar .nav-link {
+    color: rgb(241, 234, 249);
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: rgb(213, 172, 96);
+}
+
+/* TARJETAS */
+.card {
+    background-color: rgb(41, 31, 59);
+    color: rgb(241, 234, 249);
+    border: 1px solid rgb(73, 54, 95);
+}
+
+.card-img-top {
+    height: 190px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: rgb(213, 172, 96);
+}
+
+.card-text {
+    color: rgb(241, 234, 249);
+}
+
+/* BOTONES MORADOS */
+.btn-magia {
+    background-color: rgb(112, 69, 160);
+    color: rgb(255, 255, 255);
+}
+
+.btn-magia:hover {
+    background-color: rgb(89, 53, 128);
+    color: rgb(255, 255, 255);
+}
+
+/* FOOTER */
+footer p {
+    color: rgb(241, 234, 249);
+}
+
+footer a {
+    color: rgb(213, 172, 96);
+}
+
+/* CARRUSEL PRINCIPAL */
+.carrusel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(28, 22, 41);
+}
+
+/* DIAPOSITIVAS */
+.carrusel .carousel-item {
+    display: none;
+    min-height: 550px;
+    padding: 65px 60px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+/* DIAPOSITIVA ACTIVA */
+.carrusel .carousel-item.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FONDO DE INICIO */
+.portada-inicio {
+    background: radial-gradient(
+        circle,
+        rgb(61, 38, 87),
+        rgb(18, 16, 27)
+    );
+}
+
+/* FONDO DE POCIONES */
+.portada-pociones {
+    background-image:
+        linear-gradient(
+            rgba(18, 16, 27, 0.70),
+            rgba(18, 16, 27, 0.88)
+        ),
+        url("imagenes/pociones.jpg");
+}
+
+/* FONDO DE GRIMORIOS */
+.portada-grimorios {
+    background-image:
+        linear-gradient(
+            rgba(18, 16, 27, 0.70),
+            rgba(18, 16, 27, 0.88)
+        ),
+        url("imagenes/grimorios.jpg");
+}
+
+/* FONDO DE CRIATURAS */
+.portada-criaturas {
+    background-image:
+        linear-gradient(
+            rgba(18, 16, 27, 0.70),
+            rgba(18, 16, 27, 0.88)
+        ),
+        url("imagenes/criaturas.jpg");
+}
+
+/* CONTENIDO DEL CARRUSEL */
+.contenido-carrusel {
+    position: relative;
+    max-width: 950px;
+}
+
+/* LOGO DE PORTADA */
+.logo-portada {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/* ESTRELLAS DECORATIVAS */
+.estrellas {
+    display: block;
+    color: rgb(213, 172, 96);
+    font-size: 34px;
+    margin-bottom: 20px;
+    letter-spacing: 15px;
+}
+
+/* TITULOS DEL CARRUSEL */
+.carrusel h1,
+.carrusel h2 {
+    font-family: Georgia, serif;
+    font-size: 65px;
+    font-weight: bold;
+    color: rgb(213, 172, 96);
+    margin-bottom: 15px;
+}
+
+/* TEXTOS DEL CARRUSEL */
+.carrusel p {
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: rgb(241, 234, 249);
+}
+
+/* BOTON DORADO */
+.btn-dorado {
+    background-color: rgb(213, 172, 96);
+    color: rgb(18, 16, 27);
+    padding: 12px 25px;
+    font-weight: bold;
+}
+
+.btn-dorado:hover {
+    background-color: rgb(184, 145, 73);
+    color: rgb(18, 16, 27);
+}
+
+/* FLECHAS DEL CARRUSEL */
+.carrusel .prev,
+.carrusel .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(18, 16, 27, 0.65);
+    color: white;
+    border: 1px solid rgb(213, 172, 96);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* FLECHA IZQUIERDA */
+.carrusel .prev {
+    left: 18px;
+}
+
+/* FLECHA DERECHA */
+.carrusel .next {
+    right: 18px;
+}
+
+/* INDICADORES INFERIORES */
+.indicators {
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.indicators button {
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    border: 0;
+    border-radius: 50%;
+    background-color: rgb(190, 180, 202);
+    cursor: pointer;
+}
+
+.indicators button.active {
+    background-color: rgb(213, 172, 96);
+}
+
+/* ADAPTACION A MOVILES */
+@media (max-width: 767px) {
+
+    .carrusel .carousel-item {
+        min-height: 440px;
+        padding: 45px;
+    }
+
+    .carrusel h1,
+    .carrusel h2 {
+        font-size: 36px;
+    }
+
+    .carrusel p {
+        font-size: 17px;
+    }
+
+    .logo-portada {
+        width: 75px;
+        height: 75px;
+    }
+
+    .estrellas {
+        font-size: 20px;
+        letter-spacing: 8px;
+    }
+
+    .carrusel .prev {
+        left: 5px;
+    }
+
+    .carrusel .next {
+        right: 5px;
+    }
+}
