@@ -1,0 +1,28 @@
+ENLACES PARA LOS BOTONES DE galeria.html
+Cambia el href de cada botón por el que corresponda:
+
+Poción de vida: ./productos.html#pocion-vida
+Poción de maná: ./productos.html#pocion-mana
+Poción de invisibilidad: ./productos.html#pocion-invisibilidad
+Poción de fuerza: ./productos.html#pocion-fuerza
+Poción de veneno: ./productos.html#pocion-veneno
+Poción de velocidad: ./productos.html#pocion-velocidad
+Grimorio de fuego: ./productos.html#grimorio-fuego
+Grimorio de sombras: ./productos.html#grimorio-sombras
+Grimorio de naturaleza: ./productos.html#grimorio-naturaleza
+Grimorio de hielo: ./productos.html#grimorio-hielo
+Grimorio de sanación: ./productos.html#grimorio-sanacion
+Grimorio de conjuración: ./productos.html#grimorio-conjuracion
+Huevo de dragón: ./productos.html#huevo-dragon
+Huevo de fénix: ./productos.html#huevo-fenix
+Huevo de dragón de hielo: ./productos.html#huevo-dragon-hielo
+Huevo de unicornio: ./productos.html#huevo-unicornio
+Huevo de grifo: ./productos.html#huevo-grifo
+Huevo misterioso: ./productos.html#huevo-misterioso
+Amuleto de protección: ./productos.html#amuleto-proteccion
+Cristal de poder: ./productos.html#cristal-poder
+Anillo encantado: ./productos.html#anillo-encantado
+Corona antigua: ./productos.html#corona-antigua
+Orbe mágico: ./productos.html#orbe-magico
+
+Ejemplo: <a href="./productos.html#pocion-vida" class="btn btn-magia">Ver producto</a>
