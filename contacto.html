@@ -1,56 +1,64 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Pedido</title>
 
-    <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Arkanthia - Inicio</title>
 
-    <!-- Estilos propios -->
-    <link rel="stylesheet" href="estilo.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
     <!-- MENÚ DE NAVEGACIÓN -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="menu.html">Mi Tienda</a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
 
-            <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#menuPrincipal"
-                aria-controls="menuPrincipal"
-                aria-expanded="false"
-                aria-label="Abrir menú">
+                <a class="navbar-brand" href="index.html">
+                    ARKANTHIA
+                </a>
 
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="menuPrincipal">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="menu.html">Inicio</a>
-                    </li>
+                <div class="collapse navbar-collapse" id="menu">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="galeria.html">Productos</a>
-                    </li>
+                    <ul class="navbar-nav ms-auto">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Inicio</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link active" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pociones.html">Catalogo</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="grimorios.html">Producto</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="criaturas.html">Sobre Nosotros</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="reliquias.html">Contacto</a>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
 
     <!-- FORMULARIO -->
@@ -112,48 +120,200 @@
                 <p>Selecciona todos los productos que quieras comprar:</p>
 
                 <fieldset>
-                    <legend>Catálogo</legend>
+
+                    <legend>Pociones</legend>
+
+                    <img src="imagenes/pocionesformulario.png"
+                      alt="Colección de pociones mágicas"
+                      class="imagen-categoria">
+                    </img>
 
                     <div class="checkbox-group">
 
                         <div class="checkbox-item">
                             <input type="checkbox" id="producto1"
                                 name="productos[]" value="Producto 1">
-                            <label for="producto1">Producto 1</label>
+                            <label for="producto1">Poción de vida</label>
                         </div>
 
                         <div class="checkbox-item">
                             <input type="checkbox" id="producto2"
                                 name="productos[]" value="Producto 2">
-                            <label for="producto2">Producto 2</label>
+                            <label for="producto2">Poción de maná</label>
                         </div>
 
                         <div class="checkbox-item">
                             <input type="checkbox" id="producto3"
                                 name="productos[]" value="Producto 3">
-                            <label for="producto3">Producto 3</label>
+                            <label for="producto3">Poción de invisibilidad</label>
                         </div>
 
                         <div class="checkbox-item">
                             <input type="checkbox" id="producto4"
                                 name="productos[]" value="Producto 4">
-                            <label for="producto4">Producto 4</label>
+                            <label for="producto4">Poción de fuerza</label>
                         </div>
 
                         <div class="checkbox-item">
                             <input type="checkbox" id="producto5"
                                 name="productos[]" value="Producto 5">
-                            <label for="producto5">Producto 5</label>
+                            <label for="producto5">Poción de veneno</label>
                         </div>
 
                         <div class="checkbox-item">
                             <input type="checkbox" id="producto6"
                                 name="productos[]" value="Producto 6">
-                            <label for="producto6">Producto 6</label>
+                            <label for="producto6">Poción de velocidad</label>
+                        </div>
+
+
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Grimorios</legend>
+
+                    <img src="imagenes/grimorioformulario.png"
+                      alt="colección de grimorios"
+                      class="imagen-categoria">
+                    </img>
+
+                    <div class="checkbox-group">
+
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="producto1"
+                                name="productos[]" value="Producto 1">
+                            <label for="producto1">Grimonio de fuego</label>
+                        </div>
+
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="producto2"
+                                name="productos[]" value="Producto 2">
+                            <label for="producto2">Grimonio de sombras</label>
+                        </div>
+
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="producto3"
+                                name="productos[]" value="Producto 3">
+                            <label for="producto3">Grimonio de naturaleza</label>
+                        </div>
+
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="producto4"
+                                name="productos[]" value="Producto 4">
+                            <label for="producto4">Grimonio de hielo</label>
+                        </div>
+
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="producto5"
+                                name="productos[]" value="Producto 5">
+                            <label for="producto5">Grimonio de sanación</label>
+                        </div>
+
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="producto5"
+                                name="productos[]" value="Producto 6">
+                            <label for="producto5">Grimonio de conjuración</label>
                         </div>
 
                     </div>
                 </fieldset>
+                
+                <fieldset>
+                    <legend>Criaturas</legend>
+
+                    <img src="imagenes/criaturasformulario.png"
+                      alt="coleccion de criaturas"
+                      class="imagen-categoria">
+                    </img>
+
+                    <div class="checkbox-group">
+
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="producto1"
+                                name="productos[]" value="Producto 1">
+                            <label for="producto1">Huevo de dragón</label>
+                        </div>
+
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="producto2"
+                                name="productos[]" value="Producto 2">
+                            <label for="producto2">Huevo de fénix</label>
+                        </div>
+
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="producto3"
+                                name="productos[]" value="Producto 3">
+                            <label for="producto3">Huevo de dragón de hielo</label>
+                        </div>
+
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="producto4"
+                                name="productos[]" value="Producto 4">
+                            <label for="producto4">Huevo de unicornio</label>
+                        </div>
+
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="producto5"
+                                name="productos[]" value="Producto 5">
+                            <label for="producto5">Huevo de grifo</label>
+                        </div>
+
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="producto5"
+                                name="productos[]" value="Producto 6">
+                            <label for="producto5">Huevo misterioso</label>
+                        </div>
+
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Reliquias</legend>
+
+                    <img src="imagenes/reliquiasformulario.png"
+                      alt="colección de reliquias"
+                      class="imagen-categoria">
+                    </img>
+
+                    <div class="checkbox-group">
+
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="producto1"
+                                name="productos[]" value="Producto 1">
+                            <label for="producto1">Amuleto de protección</label>
+                        </div>
+
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="producto2"
+                                name="productos[]" value="Producto 2">
+                            <label for="producto2">Cristal de poder</label>
+                        </div>
+
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="producto3"
+                                name="productos[]" value="Producto 3">
+                            <label for="producto3">Anillo encantado</label>
+                        </div>
+
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="producto4"
+                                name="productos[]" value="Producto 4">
+                            <label for="producto4">corona antigua</label>
+                        </div>
+
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="producto5"
+                                name="productos[]" value="Producto 5">
+                            <label for="producto5">Orbe mágico</label>
+                        </div>
+
+                    </div>
+                </fieldset>
+
+
+
+
 
                 <div class="form-hint">
                     Puedes seleccionar varios productos.
@@ -334,9 +494,25 @@
 
     </div>
 
+    
+
+    <div class="banner-final">
+      <img src="imagenes/final.png" alt="imagen del final">
+    </div>
+
+    <div class="logo-formulario">
+      <img src="imagenes/logo.png" alt="logo">
+    </div>
+
+
+</div>
+
+
 
     <!-- PIE DE PÁGINA -->
     <footer class="footer text-center">
+
+
 
         <div class="container py-4">
 
@@ -383,6 +559,8 @@
             });
 
     </script>
+
+    
 
 </body>
 </html>
