@@ -11,30 +11,28 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
 
     <!-- MENÚ DE NAVEGACIÓN -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
 
                 <a class="navbar-brand" href="index.html">
                     ARKANTHIA
                 </a>
 
-                <!-- Botón del menú para móviles -->
+                <!-- Botón para móviles -->
                 <button class="navbar-toggler" type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!-- Enlaces del menú -->
                 <div class="collapse navbar-collapse" id="menu">
-
                     <ul class="navbar-nav ms-auto">
 
                         <li class="nav-item">
@@ -46,7 +44,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="producto.html">Productos</a>
+                            <a class="nav-link" href="producto.html">Producto</a>
                         </li>
 
                         <li class="nav-item">
@@ -64,107 +62,51 @@
         </nav>
     </header>
 
+    <!-- la página principal donde se ve todo el contenido -->
     <main>
 
-        <!-- CARRUSEL -->
+        <!-- CARRUSEL DE IMÁGENES -->
         <section>
 
-            <div id="carruselArkanthia"  class="carousel slide"data-bs-ride="carousel"data-bs-interval="3000"></div>
-           
+            <div class="carousel" id="carruselPrincipal">
 
-                <div class="carousel-inner">
+                <div class="carousel-container">
 
-                    <!-- PRIMERA IMAGEN: ARKANTHIA -->
-                    <div class="carousel-item active">
+                    <!-- PRIMERA IMAGEN -->
+                    <img src="./images/paisaje.png"   class="carousel-item active" alt="Reino mágico de Arkanthia">
+                         
+                      
 
-                        <img src="./images/paisaje.png"
-                             class="d-block w-100 imagen-carrusel"
-                             alt="Mundo mágico de Arkanthia">
+                    <!-- SEGUNDA IMAGEN -->
+                    <img src="./images/mas pociones.png"  class="carousel-item"   alt="Pociones mágicas">
+                       
+                        
 
-                        <div class="carousel-caption">
-                            <h1>ARKANTHIA</h1>
+                    <!-- TERCERA IMAGEN -->
+                    <img src="./images/libros.png"   class="carousel-item"  alt="Grimorios ancestrales">
+                        
+                       
 
-                            <p>
-                                Donde la magia se convierte en leyenda
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <!-- SEGUNDA IMAGEN: POCIONES -->
-                    <div class="carousel-item">
-
-                        <img src="./images/mas pociones.png"
-                             class="d-block w-100 imagen-carrusel"
-                             alt="Pociones mágicas">
-
-                        <div class="carousel-caption">
-                            <h2>Pociones mágicas</h2>
-
-                            <p>
-                                Descubre el poder de nuestros elixires
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <!-- TERCERA IMAGEN: GRIMORIOS -->
-                    <div class="carousel-item">
-
-                        <img src="./images/grimorios.png"
-                             class="d-block w-100 imagen-carrusel"
-                             alt="Grimorios mágicos">
-
-                        <div class="carousel-caption">
-                            <h2>Grimorios ancestrales</h2>
-
-                            <p>
-                                Conoce los secretos de la magia
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <!-- CUARTA IMAGEN: CRIATURAS -->
-                    <div class="carousel-item">
-
-                        <img src="./images/aves.png"
-                             class="d-block w-100 imagen-carrusel"
-                             alt="Criaturas mágicas">
-
-                        <div class="carousel-caption">
-                            <h2>Criaturas legendarias</h2>
-
-                            <p>
-                                Explora los misterios de otros mundos
-                            </p>
-                        </div>
-
-                    </div>
+                    <!-- CUARTA IMAGEN -->
+                    <img src="./images/aves.png"  class="carousel-item"  alt="Criaturas legendarias">
+                        
+                        
 
                 </div>
 
-                <!-- FLECHA ANTERIOR -->
-                <button class="carousel-control-prev"
-                        type="button"
-                        data-bs-target="#carruselArkanthia"
-                        data-bs-slide="prev">
-
-                    <span class="carousel-control-prev-icon"></span>
-                    <span class="visually-hidden">Anterior</span>
-
+                <!-- FLECHAS DEL CARRUSEL -->
+                <button class="prev" type="button"
+                    onclick="prevSlide()">
+                    &#10094;
                 </button>
 
-                <!-- FLECHA SIGUIENTE -->
-                <button class="carousel-control-next"
-                        type="button"
-                        data-bs-target="#carruselArkanthia"
-                        data-bs-slide="next">
-
-                    <span class="carousel-control-next-icon"></span>
-                    <span class="visually-hidden">Siguiente</span>
-
+                <button class="next" type="button"
+                    onclick="nextSlide()">
+                    &#10095;
                 </button>
+
+                <!-- INDICADORES -->
+                <div class="indicators"></div>
 
             </div>
 
@@ -173,9 +115,9 @@
         <!-- BIENVENIDA -->
         <section class="container my-5">
 
-            <h2 class="text-center">
+            <h1 class="text-center">
                 Bienvenido a Arkanthia
-            </h2>
+            </h1>
 
             <p class="text-center">
                 Descubre una tienda llena de magia,
@@ -185,17 +127,16 @@
 
         </section>
 
-
-                <!-- HISTORIA DE ARKANTHIA -->
+        <!-- HISTORIA DE LA TIENDA -->
         <section class="container my-5" id="historia">
 
             <h2 class="text-center mb-4">
                 La historia de Arkanthia
             </h2>
 
-            <div class="row g-4">
-                <!-- Texto -->
+            <div class="row g-3">
 
+                <!-- TEXTO DE LA HISTORIA -->
                 <div class="col-12 col-md-6">
 
                     <h3>El origen de la magia</h3>
@@ -227,16 +168,18 @@
 
                 </div>
 
+                <!-- IMAGEN DE LA HISTORIA -->
                 <div class="col-12 col-md-6">
 
-                    <img src="./images/paisaje.png"class="img-fluid rounded imagen-historia"alt="Antiguo reino mágico de Arkanthia">
+                    <img src="./images/paisaje.png"  class="img-fluid rounded imagen-historia" alt="Antiguo reino de Arkanthia">
                          
-                
+
                 </div>
 
             </div>
 
         </section>
+
         <!-- CATEGORÍAS DE LA TIENDA -->
         <section class="container my-5 seccion-categorias">
 
@@ -246,7 +189,7 @@
 
             <div class="row g-3">
 
-                <!-- TARJETA 1: POCIONES -->
+                <!-- POCIONES -->
                 <div class="col-12 col-md-6">
 
                     <div class="card h-100 shadow-sm">
@@ -257,16 +200,14 @@
 
                         <div class="card-body">
 
-                            <h5 class="card-title">
-                                Pociones
-                            </h5>
+                            <h5 class="card-title">Pociones</h5>
 
                             <p class="card-text">
                                 Descubre pociones mágicas
                                 con poderes sorprendentes.
                             </p>
 
-                            <a href="catalogo.html" class="btn btn-magia">
+                            <a href="galeria.html" class="btn btn-magia">
                                 Ver pociones
                             </a>
 
@@ -274,7 +215,7 @@
                     </div>
                 </div>
 
-                <!-- TARJETA 2: GRIMORIOS -->
+                <!-- GRIMORIOS -->
                 <div class="col-12 col-md-6">
 
                     <div class="card h-100 shadow-sm">
@@ -285,16 +226,14 @@
 
                         <div class="card-body">
 
-                            <h5 class="card-title">
-                                Grimorios
-                            </h5>
+                            <h5 class="card-title">Grimorios</h5>
 
                             <p class="card-text">
                                 Libros antiguos que contienen
                                 hechizos y secretos mágicos.
                             </p>
 
-                            <a href="catalogo.html" class="btn btn-magia">
+                            <a href="galeria.html" class="btn btn-magia">
                                 Ver grimorios
                             </a>
 
@@ -302,7 +241,7 @@
                     </div>
                 </div>
 
-                <!-- TARJETA 3: CRIATURAS -->
+                <!-- CRIATURAS -->
                 <div class="col-12 col-md-6">
 
                     <div class="card h-100 shadow-sm">
@@ -313,16 +252,14 @@
 
                         <div class="card-body">
 
-                            <h5 class="card-title">
-                                Criaturas
-                            </h5>
+                            <h5 class="card-title">Criaturas</h5>
 
                             <p class="card-text">
                                 Huevos de dragón y otras
                                 criaturas de mundos fantásticos.
                             </p>
 
-                            <a href="catalogo.html" class="btn btn-magia">
+                            <a href="galeria.html" class="btn btn-magia">
                                 Ver criaturas
                             </a>
 
@@ -330,7 +267,7 @@
                     </div>
                 </div>
 
-                <!-- TARJETA 4: RELIQUIAS -->
+                <!-- RELIQUIAS -->
                 <div class="col-12 col-md-6">
 
                     <div class="card h-100 shadow-sm">
@@ -341,16 +278,14 @@
 
                         <div class="card-body">
 
-                            <h5 class="card-title">
-                                Reliquias
-                            </h5>
+                            <h5 class="card-title">Reliquias</h5>
 
                             <p class="card-text">
                                 Objetos legendarios y
                                 artefactos encantados.
                             </p>
 
-                            <a href="catalogo.html" class="btn btn-magia">
+                            <a href="galeria.html" class="btn btn-magia">
                                 Ver reliquias
                             </a>
 
@@ -359,9 +294,8 @@
                 </div>
 
             </div>
+
         </section>
-
-
 
         <!-- MENSAJE FINAL -->
         <section class="container text-center my-5">
@@ -371,10 +305,10 @@
             <p>
                 Explora nuestros objetos mágicos
                 y descubre los secretos que
-                esconde el mundo de Arkanthia.
+                esconde Arkanthia.
             </p>
 
-            <a href="catalogo.html" class="btn btn-magia">
+            <a href="producto.html" class="btn btn-magia">
                 Explorar catálogo
             </a>
 
@@ -397,9 +331,11 @@
 
     </footer>
 
+    <!-- JAVASCRIPT DEL CARRUSEL -->
+    <script src="scripts.js"></script>
+
     <!-- JAVASCRIPT DE BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
-
