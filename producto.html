@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Arkanthia</title>
+    <!-- Bootstrap 5: hoja de estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS propio: siempre después de Bootstrap -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html"><b>Arkanthia</b></a>
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal" aria-expanded="false"
+                    aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./galeria.html">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="container py-5">
+    <div class="text-center mb-5">
+        <h1>PRODUCTOS</h1>
+        <h5 class="subtitulo">OBJETOS PARA QUIENES BUSCAN LO EXTRAORDINARIO</h5>
+        <p class="texto-secundario">Explora reliquias, símbolos y objetos de inspiración mágica.</p>
+    </div>
+        <!-- Grimorio de las Sombras: destino del enlace de la galería -->
+        <section id="grimorio" class="producto mb-5">
+            <div class="row g-4">
+                <!-- Columna 1: imagen -->
+                <div class="col-12 col-lg-5">
+                    <div class="caja-imagen h-100">
+                        <img src="./images/grimorio.png" class="img-fluid" alt="Grimorio de las Sombras">
+                    </div>
+                </div>
+                <!-- Columna 2: detalles -->
+                <div class="col-12 col-lg-4">
+                    <h2>Grimorio de las Sombras</h2>
+                    <p class="texto-secundario">Libro decorativo de conocimientos arcanos, símbolos antiguos y rituales olvidados. Una pieza de inspiración fantástica para tu biblioteca.</p>
+                    <h3 class="precio">39,95 €</h3>
+                    <p class="disponible">Disponible</p>
+                    <h5>Características</h5>
+                    <ul>
+                            <li>Cubierta de aspecto envejecido</li>
+                            <li>Símbolos e ilustraciones arcanas</li>
+                            <li>Encuadernación decorativa</li>
+                    </ul>
+                </div>
+                <!-- Columna 3: consulta -->
+                <div class="col-12 col-lg-3">
+                    <div class="caja-compra">
+                        <h3 class="precio">39,95 €</h3>
+                        <p class="disponible">Disponible</p>
+                        <p class="texto-secundario">Artículo de la colección Arkanthia.</p>
+                        <a href="./contacto.html#formulario" class="btn btn-principal w-100">Consultar producto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Poción de la Luna Carmesí: destino del enlace de la galería -->
+        <section id="pocion" class="producto mb-5">
+            <div class="row g-4">
+                <!-- Columna 1: imagen -->
+                <div class="col-12 col-lg-5">
+                    <div class="caja-imagen h-100">
+                        <img src="./images/pocion.png" class="img-fluid" alt="Poción de la Luna Carmesí">
+                    </div>
+                </div>
+                <!-- Columna 2: detalles -->
+                <div class="col-12 col-lg-4">
+                    <h2>Poción de la Luna Carmesí</h2>
+                    <p class="texto-secundario">Frasco decorativo de cristal con líquido de color carmesí, inspirado en las antiguas fórmulas de alquimia y los rituales lunares.</p>
+                    <h3 class="precio">24,95 €</h3>
+                    <p class="disponible">Disponible</p>
+                    <h5>Características</h5>
+                    <ul>
+                            <li>Frasco de cristal con tapón</li>
+                            <li>Estética de alquimia antigua</li>
+                            <li>Artículo de decoración; no ingerir</li>
+                    </ul>
+                </div>
+                <!-- Columna 3: consulta -->
+                <div class="col-12 col-lg-3">
+                    <div class="caja-compra">
+                        <h3 class="precio">24,95 €</h3>
+                        <p class="disponible">Disponible</p>
+                        <p class="texto-secundario">Artículo de la colección Arkanthia.</p>
+                        <a href="./contacto.html#formulario" class="btn btn-principal w-100">Consultar producto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Amuleto del Eclipse: destino del enlace de la galería -->
+        <section id="amuleto" class="producto mb-5">
+            <div class="row g-4">
+                <!-- Columna 1: imagen -->
+                <div class="col-12 col-lg-5">
+                    <div class="caja-imagen h-100">
+                        <img src="./images/amuleto.png" class="img-fluid" alt="Amuleto del Eclipse">
+                    </div>
+                </div>
+                <!-- Columna 2: detalles -->
+                <div class="col-12 col-lg-4">
+                    <h2>Amuleto del Eclipse</h2>
+                    <p class="texto-secundario">Colgante de inspiración esotérica cuyo diseño representa la unión entre la luz y la oscuridad durante un eclipse.</p>
+                    <h3 class="precio">19,95 €</h3>
+                    <p class="disponible">Disponible</p>
+                    <h5>Características</h5>
+                    <ul>
+                            <li>Acabado metálico envejecido</li>
+                            <li>Motivo de sol y luna</li>
+                            <li>Cadena incluida</li>
+                    </ul>
+                </div>
+                <!-- Columna 3: consulta -->
+                <div class="col-12 col-lg-3">
+                    <div class="caja-compra">
+                        <h3 class="precio">19,95 €</h3>
+                        <p class="disponible">Disponible</p>
+                        <p class="texto-secundario">Artículo de la colección Arkanthia.</p>
+                        <a href="./contacto.html#formulario" class="btn btn-principal w-100">Consultar producto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cristal de Obsidiana: destino del enlace de la galería -->
+        <section id="cristal" class="producto mb-5">
+            <div class="row g-4">
+                <!-- Columna 1: imagen -->
+                <div class="col-12 col-lg-5">
+                    <div class="caja-imagen h-100">
+                        <img src="./images/cristal.png" class="img-fluid" alt="Cristal de Obsidiana">
+                    </div>
+                </div>
+                <!-- Columna 2: detalles -->
+                <div class="col-12 col-lg-4">
+                    <h2>Cristal de Obsidiana</h2>
+                    <p class="texto-secundario">Piedra volcánica negra de acabado pulido, tradicionalmente asociada con la protección y el simbolismo espiritual.</p>
+                    <h3 class="precio">14,95 €</h3>
+                    <p class="agotado">Agotado</p>
+                    <h5>Características</h5>
+                    <ul>
+                            <li>Obsidiana negra pulida</li>
+                            <li>Origen volcánico</li>
+                            <li>Uso ornamental y simbólico</li>
+                    </ul>
+                </div>
+                <!-- Columna 3: consulta -->
+                <div class="col-12 col-lg-3">
+                    <div class="caja-compra">
+                        <h3 class="precio">14,95 €</h3>
+                        <p class="agotado">Agotado</p>
+                        <p class="texto-secundario">Artículo de la colección Arkanthia.</p>
+                        <a href="./contacto.html#formulario" class="btn btn-principal w-100">Consultar disponibilidad</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+</main>
+<footer class="text-center py-4 mt-auto">
+    <div class="container">
+        <h5>ARKANTHIA</h5>
+        <p class="mb-0 texto-secundario">Donde la magia encuentra su lugar.</p>
+    </div>
+</footer>
+    <!-- Script del menú responsive de Bootstrap (sin JavaScript propio) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
