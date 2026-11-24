@@ -17,45 +17,42 @@
 <body>
 
     <!-- MENÚ DE NAVEGACIÓN -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">
+                        <img alt="Logo de Arkanthia" height="45" src="./images/logo.png" width="45">
+                        <b>Arkanthia</b>
+                    </a>
 
-            <!-- Logo o nombre -->
-            <a class="navbar-brand d-flex align-items-center" href="menu.html">
-                <img src="imagenes/logo.png" alt="Logo de Arkanthia" class="logo-navbar">
-                ARKANTHIA
-            </a>
+                    <button aria-controls="menu" aria-expanded="false" aria-label="Abrir menú" class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse" type="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-            <!-- Botón hamburguesa -->
-            <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#menuPrincipal"
-                aria-controls="menuPrincipal"
-                aria-expanded="false"
-                aria-label="Abrir menú">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                    <div class="collapse navbar-collapse" id="menu">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Inicio</a>
+                            </li>
 
-            <!-- Opciones del menú -->
-            <div class="collapse navbar-collapse" id="menuPrincipal">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="menu.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="galeria.html">Catálogo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./galeria.html">Catálogo</a>
+                            </li>
 
-        </div>
-    </nav>
+                            <li class="nav-item">
+                                <a aria-current="page" class="nav-link active" href="./productos.html">Productos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./nosotros.html">Sobre Nosotros</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
     <!-- PORTADA -->
     <header id="inicio" class="portada text-center">
