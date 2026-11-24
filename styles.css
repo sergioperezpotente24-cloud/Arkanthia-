@@ -1,0 +1,210 @@
+
+/* ===================================
+   FONDO GENERAL
+=================================== */
+
+body {
+    background-color: rgb(18, 16, 27);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* ===================================
+   BARRA DE NAVEGACION
+=================================== */
+
+.navbar {
+    background-color: rgb(28, 22, 41);
+}
+
+.navbar-brand {
+    color: rgb(213, 172, 96);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: rgb(213, 172, 96);
+}
+
+.navbar .nav-link {
+    color: white;
+}
+
+.navbar .nav-link:hover {
+    color: rgb(213, 172, 96);
+}
+
+.navbar .nav-link.active {
+    color: rgb(213, 172, 96);
+}
+
+
+/* ===================================
+   TITULOS Y PARRAFOS
+=================================== */
+
+h1, h2, h3, h4, h5 {
+    color: rgb(213, 172, 96);
+}
+
+p {
+    color: white;
+}
+
+
+/* ===================================
+   CARRUSEL DE IMAGENES
+=================================== */
+
+#carruselPrincipal {
+    width: 75%;
+    margin: auto;
+    background-color: rgb(18, 16, 27);
+}
+
+/* CONTENEDOR DEL CARRUSEL */
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* IMAGENES DEL CARRUSEL */
+#carruselPrincipal .carousel-item {
+    display: none;
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+}
+
+/* IMAGEN ACTIVA */
+#carruselPrincipal .carousel-item.active {
+    display: block;
+}
+
+
+/* ===================================
+   FLECHAS DEL CARRUSEL
+=================================== */
+
+.prev, .next {
+    background-color: rgb(28, 22, 41);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* EFECTO AL PASAR EL RATON */
+.prev:hover, .next:hover {
+    background-color: rgb(112, 69, 160);
+}
+
+
+/* ===================================
+   INDICADORES DEL CARRUSEL
+=================================== */
+
+.indicators {
+    display: flex;
+    justify-content: center;
+}
+
+/* PUNTOS DEL CARRUSEL */
+.indicators div {
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* PUNTO ACTIVO */
+.indicators div.active {
+    background-color: rgb(213, 172, 96);
+}
+
+
+/* ===================================
+   CATEGORIAS DE LA TIENDA
+=================================== */
+
+.seccion-categorias {
+    width: 65%;
+}
+
+/* TARJETAS */
+.card {
+    background-color: rgb(41, 31, 59);
+    color: white;
+    border: 1px solid rgb(73, 54, 95);
+}
+
+/* IMAGENES DE LAS TARJETAS */
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+/* TITULOS DE LAS TARJETAS */
+.card-title {
+    color: rgb(213, 172, 96);
+}
+
+/* TEXTOS DE LAS TARJETAS */
+.card-text {
+    color: white;
+}
+
+
+/* ===================================
+   BOTONES DE LA TIENDA
+=================================== */
+
+.btn-magia {
+    background-color: rgb(112, 69, 160);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* BOTONES AL PASAR EL RATON */
+.btn-magia:hover {
+    background-color: rgb(89, 53, 128);
+    color: white;
+}
+
+
+/* ===================================
+   HISTORIA DE ARKANTHIA
+=================================== */
+
+#historia {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* IMAGEN DE LA HISTORIA */
+.imagen-historia {
+    width: 100%;
+    height: auto;
+}
+
+
+/* ===================================
+   PIE DE PAGINA
+=================================== */
+
+footer {
+    background-color: rgb(28, 22, 41);
+    color: white;
+}
+
+footer p {
+    color: white;
+}
