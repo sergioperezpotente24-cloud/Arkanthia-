@@ -1,0 +1,423 @@
+
+/* =====================================
+   ARKANTHIA - ESTILOS GENERALES
+   ===================================== */
+
+/* COLORES Y FONDO GENERAL */
+
+body {
+    background-color: rgb(18, 16, 27);
+    color: rgb(241, 234, 249);
+    font-family: Arial, sans-serif;
+}
+
+/* TÍTULOS GENERALES */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: rgb(213, 172, 96);
+    font-weight: bold;
+}
+
+/* TEXTOS */
+
+p,
+li {
+    color: rgb(241, 234, 249);
+}
+
+.texto-intro {
+    color: rgb(190, 180, 202);
+}
+
+/* ENLACES */
+
+a {
+    color: rgb(213, 172, 96);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(241, 234, 249);
+}
+
+/* =====================================
+   MENÚ DE NAVEGACIÓN
+   ===================================== */
+
+.navbar {
+    background-color: rgb(28, 22, 41);
+    border-bottom: 1px solid rgb(73, 54, 95);
+}
+
+/* Nombre o logotipo de la web */
+
+.logo-navbar {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+.navbar-brand {
+    color: rgb(213, 172, 96);
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: rgb(241, 234, 249);
+}
+
+/* Enlaces del menú */
+
+.navbar .nav-link {
+    color: rgb(241, 234, 249);
+    transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: rgb(213, 172, 96);
+}
+
+/* Enlace de la página actual */
+
+.navbar .nav-link.active {
+    color: rgb(213, 172, 96);
+    font-weight: bold;
+}
+
+/* Botón del menú en móviles */
+
+.navbar-toggler {
+    border-color: rgb(213, 172, 96);
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) saturate(100%)
+        invert(78%) sepia(25%) saturate(650%)
+        hue-rotate(350deg) brightness(90%);
+}
+
+/* =====================================
+   BOTONES GENERALES
+   ===================================== */
+
+.btn-primary {
+    background-color: rgb(112, 69, 160);
+    border-color: rgb(112, 69, 160);
+    color: rgb(255, 255, 255);
+}
+
+.btn-primary:hover {
+    background-color: rgb(89, 53, 128);
+    border-color: rgb(89, 53, 128);
+    color: rgb(255, 255, 255);
+}
+
+.btn-secondary {
+    background-color: rgb(213, 172, 96);
+    border-color: rgb(213, 172, 96);
+    color: rgb(18, 16, 27);
+}
+
+.btn-secondary:hover {
+    background-color: rgb(184, 145, 73);
+    border-color: rgb(184, 145, 73);
+    color: rgb(18, 16, 27);
+}
+
+/* =====================================
+   SEPARADOR DE ESTRELLAS DE LA PORTADA
+   ===================================== */
+
+.separador-estrellas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: rgb(213, 172, 96);
+    font-size: 1.3rem;
+    letter-spacing: 5px;
+    margin: 5px auto 0px;
+}
+
+.separador-estrellas::before,
+.separador-estrellas::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    background-color: rgb(213, 172, 96);
+}
+
+/* =====================================
+   CATÁLOGO ARKANTHIA
+   ===================================== */
+
+/* TÍTULOS Y TEXTOS DE LA PÁGINA */
+#galeria {
+    padding-top: 0 !important;
+}
+#galeria h2,
+#eventos h2,
+#informacion h2 {
+    color: rgb(213, 172, 96);
+    font-weight: bold;
+}
+
+/* TÍTULOS DE CADA CATEGORÍA */
+
+.titulo-categoria {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(73, 54, 95);
+    color: rgb(213, 172, 96);
+}
+
+/* TARJETAS */
+#margen{
+    margin-left: 13%;
+    width: 100%;
+}
+#galeria .card {
+    width: 75%;
+    height: 100%;
+    border: 1px solid rgb(73, 54, 95);
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: rgb(41, 31, 59);
+    color: rgb(241, 234, 249);
+    transition: transform 0.3s, box-shadow 0.3s;
+    align-items: center;
+      
+}
+
+#galeria .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* IMÁGENES DE LAS TARJETAS */
+
+#galeria .card-img-top {
+    width: 75%;
+    height: 300px;
+    object-fit: contain;
+    display: block;
+    padding: 12px;
+    margin: 15px auto 0;
+    background-color: rgb(41, 31, 59);
+    border-radius: 12px;
+}
+
+/* TEXTO DE LAS TARJETAS */
+
+#galeria .card-body {
+    padding: 12px;
+    text-align: center;
+}
+
+#galeria .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(213, 172, 96);
+    margin-bottom: 15px;
+}
+
+#galeria .card-text {
+    font-size: 0.85rem;
+    color: rgb(241, 234, 249);
+    margin-bottom: 8px;
+}
+
+#galeria .precio {
+    font-size: 0.85rem;
+    color: rgb(213, 172, 96);
+    margin-bottom: 10px;
+}
+
+/* BOTONES DE LAS TARJETAS */
+
+#galeria .btn-outline-danger {
+    color: rgb(213, 172, 96);
+    border-color: rgb(213, 172, 96);
+    font-size: 0.85rem;
+    padding: 6px 10px;
+}
+
+#galeria .btn-outline-danger:hover {
+    background-color: rgb(184, 145, 73);
+    border-color: rgb(184, 145, 73);
+    color: rgb(18, 16, 27);
+}
+/* =====================================
+   SEPARADORES VERTICALES DE PRODUCTOS
+   ===================================== */
+
+#galeria .col-12.col-sm-6.col-lg-4 {
+    position: relative;
+}
+
+/* Línea vertical entre productos */
+#galeria .col-12.col-sm-6.col-lg-4::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 15%;
+    height: 70%;
+    width: 1px;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgb(213, 172, 96),
+        transparent
+    );
+}
+
+/* =====================================
+   LISTAS
+   ===================================== */
+
+#listas {
+    color: rgb(241, 234, 249);
+}
+
+/* CAJAS DE INFORMACIÓN */
+
+#listas .caja-informacion {
+    height: 100%;
+    background-color: rgb(41, 31, 59);
+    color: rgb(241, 234, 249);
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid rgb(73, 54, 95);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* TÍTULOS DE LAS LISTAS */
+
+#listas .caja-informacion h3 {
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    color: rgb(213, 172, 96);
+    border-bottom: 1px solid rgb(73, 54, 95);
+}
+
+/* TEXTO DE LAS LISTAS */
+
+#listas .caja-informacion ol,
+#listas .caja-informacion ul {
+    color: rgb(241, 234, 249);
+    text-align: center;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+/* ELEMENTOS DE LAS LISTAS */
+
+#listas .caja-informacion li {
+    color: rgb(241, 234, 249);
+    margin-bottom: 12px;
+}
+
+/* =====================================
+   INFORMACIÓN Y TABLA
+   ===================================== */
+
+#informacion {
+    color: rgb(241, 234, 249);
+}
+
+#informacion .table {
+    color: rgb(241, 234, 249);
+    vertical-align: middle;
+    border-color: rgb(73, 54, 95);
+}
+
+#informacion .table thead th {
+    color: rgb(213, 172, 96);
+    white-space: nowrap;
+}
+
+#informacion .table tbody td {
+    color: rgb(241, 234, 249);
+}
+
+/* EFECTOS LISTAS */
+#listas .caja-informacion {
+    transition: 0.4s;
+}
+
+/* Efecto al pasar el ratón */
+#listas .caja-informacion:hover {
+    border-color: rgb(213, 172, 96);
+    box-shadow: 0 0 15px rgba(213, 172, 96, 0.35);
+}
+
+/* =====================================
+   FORMULARIOS
+   ===================================== */
+
+.form-control,
+.form-select {
+    background-color: rgb(33, 26, 48);
+    color: rgb(241, 234, 249);
+    border: 1px solid rgb(73, 54, 95);
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: rgb(33, 26, 48);
+    color: rgb(241, 234, 249);
+    border-color: rgb(213, 172, 96);
+    box-shadow: 0 0 0 0.2rem rgba(213, 172, 96, 0.2);
+}
+
+.form-control::placeholder {
+    color: rgb(190, 180, 202);
+}
+
+/* =====================================
+   FOOTER
+   ===================================== */
+
+.footer {
+    background-color: rgb(28, 22, 41);
+    color: rgb(241, 234, 249);
+    border-top: 1px solid rgb(73, 54, 95);
+}
+
+.footer a {
+    color: rgb(213, 172, 96);
+}
+
+.footer a:hover {
+    color: rgb(241, 234, 249);
+}
+
+/* =====================================
+   ADAPTACIÓN A MÓVILES
+   ===================================== */
+
+@media (max-width: 575px) {
+
+    #galeria .card-img-top {
+        height: 260px;
+    }
+
+    #galeria .card-body {
+        padding: 10px;
+    }
+
+    #eventos .caja-informacion {
+        padding: 18px;
+    }
+
+    #galeria .col-12.col-sm-6.col-lg-4::after {
+        display: none;
+    }
+
+}
+
